@@ -1,0 +1,76 @@
+:root{
+  --body: #F0F0F0;
+  --layer-A: #404258;
+  --layer-B: #474E68;
+  --layer-C: #6B828E;
+  --high: #3C7EFC;
+  --title: #ffffff;
+  --text: #d9dadb;
+  --get: #11de1f;
+}
+
+main{
+  background: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+article{
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  background: none;
+}
+.api{
+  background: var(--layer-B);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px #cacaca;
+  width: 50%;
+}
+.api .title{
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  color: var(--title);
+}
+.get-request{color: var(--get)}
+.post-request{color: var(--high)}
+
+.api .path{
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+.api .path input{
+  padding: 7px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background: var(--layer-A);
+  color: #cdd5f5;
+}
+.api .path input:hover{outline:1px solid white}
+.api .path a button{
+  padding: 5px;
+  border: none;
+  background: var(--high);
+  color: white;
+  border-radius: 50%;
+}
+
+.api .info{
+  margin-top:10px;
+  color: var(--text);
+  width:100%;
+  word-wrap: break-word;
+}
+.api .info .t{color:var(--title)}
+
+@media(max-width:720px){
+  article{
+    flex-direction: column;
+    width: 100%;
+  }.api{width:100%};
+}

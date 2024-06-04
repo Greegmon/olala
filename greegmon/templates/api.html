@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}API{% endblock %}
+{% block head %}API{% endblock %}
+{% block jss %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/api.css') }}">
+{% endblock %}
+
+{% block content %}
+  <article>
+    
+    <div class="api">
+      <div class="title"><h3 class='get-request'>GET</h3> <h3>(AI)</h3></div>
+      <div class="path">
+        <input type="text" readonly value="/api/ai?model=gpt-3&q=Hello">
+        <a href="/api/ai?model=gpt-3&q=Hello" target="_blank"><button>GO</button></a>
+      </div>
+      <div class="info">
+        <h4 class='t'>Models:</h4>
+        <small>gpt-3, gpt-4, palm, qwen, leo, gemini, linerva<br>Credits: Joshua Sy</small>
+      </div>
+      <div class="footer"></div>
+    </div>
+    
+    <div class="api">
+      <div class="title"><h3 class='get-request'>GET</h3> <h3>(AUTO COMMENT)</h3></div>
+      <div class="path">
+        <input type="text" readonly value="/api/auto-comment?token=&postId=&comment=&count=">
+        <a href="/api/auto-comment?token=&postId=&comment=&count=" target="_blank"><button>GO</button></a>
+      </div>
+      <div class="info">
+        <h4 class='t'>Params:</h4>
+        <small>
+          token - EAAAAU....<br>
+          postId - 122145571646179792<br>
+          comment - Hello, World<br>
+          count - 20
+        </small>
+      </div>
+      <div class="footer"></div>
+    </div>
+    
+  </article>
+{% endblock %}

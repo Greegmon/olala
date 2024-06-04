@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}LINERVA{% endblock %}
+{% block head %}LINERVA{% endblock %}
+{% block jss %}
+<script>
+let tite = '{{ haha }}'
+</script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ai.css') }}">
+<script src="{{ url_for('static', filename='js/ai.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+  <article>
+    <ul class="top">
+      
+      <li class="bot">
+        <div class="head">
+          <small><i class='fa-solid fa-robot'></i></small>
+          <p>BOT (LINERVA)</p>
+        </div>
+        <div class="body">
+          <p>Hello! How can I assist you today?</p>
+        </div>
+      </li>
+      
+    </ul>
+      
+    <div id="bot">
+      <input type="text" id='inputs' placeholder="Message....">
+      <button onclick="send()" class='submit'>SEND</button>
+    </div>
+  </article>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}AUTO COMMENT{% endblock %}
+{% block head %}AUTO COMMENT{% endblock %}
+{% block jss %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/comment.css') }}">
+  <script src="{{ url_for('static', filename='js/comment.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+  <article>
+    <div class="child">
+      <input type="text" id='post-id' placeholder="Post ID">
+    </div>
+    <div class="child">
+      <input type="text" id='token' placeholder="Facebook Token">
+    </div>
+    <div class="child">
+      <textarea id="comment" placeholder="Message...."></textarea>
+    </div>
+    <div class="child">
+      <input type="number" id='count' placeholder="Count">
+    </div>
+    <div class="child">
+      <button class="submit" onclick="execute()">Submit</button>
+    </div>
+    <div class="child" id='output'>
+    </div>
+  </article>
+{% endblock %}

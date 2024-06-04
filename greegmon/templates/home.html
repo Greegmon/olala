@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block head %}HOME{% endblock %}
+{% block jss %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+  <article id='container'>
+    <a href="/page/ai/gpt3"><div><p><i class='fa-solid fa-robot'></i> GPT-3</p></div></a>
+    <a href="/page/ai/gpt4"><div><p><i class='fa-solid fa-robot'></i> GPT-4</p></div></a>
+    <a href="/page/ai/palm"><div><p><i class='fa-solid fa-robot'></i> PALM</p></div></a>
+    <a href="/page/ai/qwen"><div><p><i class='fa-solid fa-robot'></i> QWEN</p></div></a>
+    <a href="/page/ai/leo"><div><p><i class='fa-solid fa-robot'></i> LEO</p></div></a>
+    <a href="/page/ai/gemini"><div><p><i class='fa-solid fa-robot'></i> GEMINI</p></div></a>
+    <a href="/page/ai/linerva"><div><p><i class='fa-solid fa-robot'></i> LINERVA</p></div></a>
+    <a href="/page/fb/auto-comment"><div><p><i class='fa-brands fa-facebook'></i> AUTO COMMENT</p></div></a>
+  </article>
+{% endblock %}

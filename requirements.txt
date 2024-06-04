@@ -1,0 +1,3 @@
+Flask
+facebook-sdk
+flask-cors

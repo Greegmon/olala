@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Developer{% endblock %}
+{% block head %}DEVELOPER{% endblock %}
+{% block jss %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/developer.css') }}">
+{% endblock %}
+
+{% block content %}
+  <article id='big-dick'>
+    <div class='top'>
+      <div><img src="{{ tae }}" alt="Greegmon"></div>
+      <div>
+        <p id='info'>
+        <b>Lorem Ipsum</b><br>
+        <small>Age: 15</small>
+        </p>
+      </div>
+    </div>
+    <div class="bottom">
+      <a href="https://github.com/Greegmon" target="_blank"><button id='github'><i class='fa-brands fa-github'></i> GITHUB</button></a>
+      <a href="https://www.facebook.com/profile.php?id=61555393773104" target="_blank"><button id='facebook'><i class='fa-brands fa-facebook'></i> FACEBOOK</button></a>
+    </div>
+  </article>
+  <article id='nig'>
+    <h2>SEND A MESSAGE</h2>
+    <form method="POST">
+      <div>
+        <input type="text" name='name' placeholder="Name" maxlength="16" minlength='3' required>
+      </div>
+      <div>
+        <textarea name="message" required placeholder="Message..." maxlength="200"></textarea>
+      </div>
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </article>
+{% endblock %}

@@ -1,0 +1,114 @@
+:root{
+  --body: #F0F0F0;
+  --layer-A: #404258;
+  --layer-B: #474E68;
+  --layer-C: #6B828E;
+  --high: #3C7EFC;
+}
+
+article{
+  background: var(--layer-B);
+  width: 88%;
+  margin: 0 auto;
+  border-radius: 7px;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+article .top{
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow-y: auto;
+}
+
+/*
+align-self: flex-end;
+*/
+
+.head{
+  padding: 4px 10px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-content: center;
+  gap: 4px;
+}
+.head small{text-align: center;padding-top:1px}
+.body{
+  padding: 4px 10px;
+  word-wrap: break-word;
+}
+.body p{font-size:8px}
+.foot{
+  padding: 5px 6px 7px 7px;
+}
+.foot button{
+  border-radius: 7px;
+  border: none;
+  padding: 3px 8px;
+}
+
+
+.bot{
+  background: var(--layer-A);
+  width: 90%;
+  border-radius: 12px 12px 12px 1px;
+}
+.bot .head{color: white;border-color:#ffffff}
+.bot .body{color: #dadddd}
+.bot .foot button{
+  background: #0edacc;
+  color: black;
+}
+.bot .foot button:hover{background: #13a59b}
+
+.you{
+  background: var(--high);
+  width: 90%;
+  border-radius: 12px 12px 1px 12px;
+  align-self: flex-end;
+}
+.you .head{color: white;border-color:#ffffff}
+.you .body{color: #e9e7e7;padding-bottom:10px}
+.you .foot button{
+  background: white;
+  color: black;
+  box-shadow: -1px 1px 5px #144de1;
+}
+
+
+/* Input field */
+#bot{
+  background: none;
+  border-top: 2px solid var(--layer-A);
+  padding: 4px 5px;
+  display: flex;
+}
+#bot input{
+  flex: 1;
+  padding: 7px 9px;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+#bot button{
+  border: none;
+  padding: 9px 6px;
+  border-radius: 0 5px 5px 0;
+  background: var(--high);
+  color: white;
+  transition: background 0.1s;
+}
+#bot button:hover{
+  background: #245cec;
+}
+
+@media(max-width:720px){
+  article{
+    width: 95%;
+    max-height: 520px;
+  }
+  .body p{font-size:16px}
+}

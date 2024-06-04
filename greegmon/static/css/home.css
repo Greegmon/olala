@@ -1,0 +1,49 @@
+:root{
+  --body: #F0F0F0;
+  --layer-A: #404258;
+  --layer-B: #474E68;
+  --layer-C: #6B828E;
+  --high: #3C7EFC;
+}
+
+main{
+  background: var(--body);
+}
+
+#container{
+  background: var(--layer-B);
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 11px;
+}
+
+#container div{
+  background: var(--high);
+  color: var(--layer-A);
+  display: inline-flex;
+  width: 23%;
+  margin: 5px;
+  padding: 10px 12px;
+  border-radius:9px;
+  color: #fdf3f3;
+  font-size:13px;
+  transition: 0.2s;
+}
+#container div:hover{
+  background: #246efa;
+}
+
+@media(max-width:720px){
+  #container{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+  }#container div{
+    display: flex;
+    margin:0;
+    width:100%;
+    font-size: 15px;
+  }
+}

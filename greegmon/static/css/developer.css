@@ -1,0 +1,93 @@
+:root{
+  --body: #F0F0F0;
+  --layer-A: #404258;
+  --layer-B: #474E68;
+  --layer-C: #6B828E;
+  --high: #3C7EFC;
+}
+
+#big-dick{
+  margin:0 auto;
+  background: var(--layer-B);
+  width: 500px;
+  border-radius:9px;
+}
+#big-dick .top{
+  display: flex;
+  gap:10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--layer-A);
+}
+#big-dick .top div:nth-child(1) img{
+  width:53px;
+  border-radius: 50%;
+  border: 1px solid var(--high);
+}
+#info b{color: white}
+#info small{color: #d7d7d7}
+
+.bottom{
+  padding: 5px 8px;
+  padding-left: 10px;
+}
+.bottom button{
+  border: none;
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+#github{background: #181818;color: #f0f0f0}
+#facebook{background: #195ec2;color: #F0F0F0}
+
+#nig{
+  background: var(--layer-B);
+  border-radius: 10px;
+  padding: 13px 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 500px;
+}
+#nig h2{
+  color: #e8eff9;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+form div{width:100%}
+input,form div button,textarea{width:100%}
+input,textarea{
+  border: none;
+  outline: none;
+  padding: 13px 10px;
+  background: var(--layer-A);
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  transition: 0.2s;
+}
+input:focus,textarea:focus{border: 1px solid var(--high)}
+textarea{
+  resize: none;
+  height: 100px;
+}
+form div button{
+  background: var(--high);
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  color: var(--body);
+  transition: 0.2s;
+}
+form div button:hover{
+  background: #096af5;
+}
+
+@media(max-width:720px){
+  #big-dick,#nig{width:90%};
+}
