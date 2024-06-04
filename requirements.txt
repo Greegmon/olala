@@ -1,3 +1,4 @@
 Flask
 facebook-sdk
+requests
 flask-cors
